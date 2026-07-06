@@ -1,1 +1,73 @@
+body{
+    margin:0;
+    background:#0d1117;
+    color:white;
+    font-family:Arial;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
 
+.container{
+    width:700px;
+    text-align:center;
+}
+
+.orb{
+    width:150px;
+    height:150px;
+    margin:auto;
+    border-radius:50%;
+
+    background:
+    radial-gradient(circle,#00ffff,#0077ff);
+
+    animation:pulse 2s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+box-shadow:0 0 20px cyan;
+}
+
+50%{
+transform:scale(1.2);
+box-shadow:0 0 50px cyan;
+}
+
+100%{
+transform:scale(1);
+box-shadow:0 0 20px cyan;
+}
+
+}
+
+#chat{
+    height:300px;
+    overflow-y:auto;
+    margin:20px;
+    border:1px solid #333;
+    padding:10px;
+}
+
+.message{
+    margin:10px;
+    padding:10px;
+    border-radius:10px;
+}
+
+.user{
+    background:#0077ff;
+}
+
+.ai{
+    background:#00aa66;
+}
+
+button{
+    padding:15px 30px;
+    font-size:18px;
+}
